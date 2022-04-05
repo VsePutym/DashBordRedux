@@ -1,0 +1,89 @@
+Index: src/Store/Positions/actionPositions.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>export const ADD_POSITIONS = 'ADD_POSITIONS';\r\n\r\nexport const addPositions = (positions) => ({\r\n    type: ADD_POSITIONS,\r\n    positions,\r\n})
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Store/Positions/actionPositions.js b/src/Store/Positions/actionPositions.js
+--- a/src/Store/Positions/actionPositions.js	(revision 68e7e7dfa4679e0502fa0bbfdc11dee9f6a86991)
++++ b/src/Store/Positions/actionPositions.js	(date 1649170051533)
+@@ -1,6 +1,6 @@
+ export const ADD_POSITIONS = 'ADD_POSITIONS';
+ 
+-export const addPositions = (positions) => ({
++export const addPositions = (position) => ({
+     type: ADD_POSITIONS,
+-    positions,
++    positions: position,
+ })
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3c883422-8848-42bf-9d0d-fed840f21be5\" name=\"Default Changelist\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"26ZO0ADbfQiwJJD0mFrFLDKJAiR\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/../Thunks\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\r\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\r\n    <property name=\"node.js.path.for.package.tslint\" value=\"project\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\r\n    <property name=\"nodejs_package_manager_path\" value=\"yarn\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"3c883422-8848-42bf-9d0d-fed840f21be5\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1647627420069</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1647627420069</updated>\r\n      <workItem from=\"1647627423740\" duration=\"4111000\" />\r\n      <workItem from=\"1647678072347\" duration=\"12084000\" />\r\n      <workItem from=\"1647691751122\" duration=\"283000\" />\r\n      <workItem from=\"1647698034550\" duration=\"2176000\" />\r\n      <workItem from=\"1647704483502\" duration=\"365000\" />\r\n      <workItem from=\"1647814728023\" duration=\"1107000\" />\r\n      <workItem from=\"1647854432939\" duration=\"3789000\" />\r\n      <workItem from=\"1647879553745\" duration=\"1653000\" />\r\n      <workItem from=\"1648217911994\" duration=\"2042000\" />\r\n      <workItem from=\"1648296507080\" duration=\"31000\" />\r\n      <workItem from=\"1648897475514\" duration=\"1661000\" />\r\n      <workItem from=\"1648899603548\" duration=\"17000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 68e7e7dfa4679e0502fa0bbfdc11dee9f6a86991)
++++ b/.idea/workspace.xml	(date 1649170051652)
+@@ -1,13 +1,20 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="3c883422-8848-42bf-9d0d-fed840f21be5" name="Default Changelist" comment="" />
++    <list default="true" id="3c883422-8848-42bf-9d0d-fed840f21be5" name="Default Changelist" comment="first commit">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Store/Positions/actionPositions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Positions/actionPositions.js" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="ProjectId" id="26ZO0ADbfQiwJJD0mFrFLDKJAiR" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -46,10 +53,35 @@
+       <workItem from="1648296507080" duration="31000" />
+       <workItem from="1648897475514" duration="1661000" />
+       <workItem from="1648899603548" duration="17000" />
++      <workItem from="1649169688646" duration="361000" />
++    </task>
++    <task id="LOCAL-00001" summary="first commit">
++      <created>1649169969559</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1649169969559</updated>
+     </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Redux only" />
++    <MESSAGE value="first commit" />
++    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
++  </component>
+ </project>
+\ No newline at end of file
